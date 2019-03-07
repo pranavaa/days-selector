@@ -1,0 +1,14 @@
+<!-- <mat-button-toggle-group>
+  <mat-button-toggle value="weekdays">Weekdays</mat-button-toggle>
+    <mat-button-toggle value="weekends">Weekends</mat-button-toggle>
+</mat-button-toggle-group> -->
+<br/><br/>
+<mat-button-toggle-group color="primary" name="daysOfWeek" multiple (change)="valueChanged($event.value)">
+  <mat-button-toggle color="primary" value="mon">MON</mat-button-toggle>
+  <mat-button-toggle value="tue">TUE</mat-button-toggle>
+  <mat-button-toggle value="wed">WED</mat-button-toggle>
+  <mat-button-toggle value="thu">THU</mat-button-toggle>
+  <mat-button-toggle value="fri">FRI</mat-button-toggle>
+  <mat-button-toggle value="sat">SAT</mat-button-toggle>
+  <mat-button-toggle value="sun">SUN</mat-button-toggle>
+</mat-button-toggle-group>
